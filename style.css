@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    font-weight: 400;
+    height: 100%;
+    font-size: 16px;
+    font-family: Roboto;
+    background: #C0DBD9;
+}
+
+
+._container {
+    max-width: 1170px;
+    padding: 0px 15px 15px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+/* ..............blue..................... */
+.header__container {}
+
+.block-header__border {
+    background: #7FAFF7;
+    height: 100px;
+
+}
+
+.block-header__button {
+    padding-top: 30px;
+    padding-left: 30px;
+
+}
+
+.block-header__text {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 115%;
+    color: #FFF;
+    background-color: #A5C7F9;
+    border-radius: 5px;
+}
+
+
+
+
+.main {}
+
+
+/* ..................green................ */
+.main-green1__container {
+    display: flex;
+}
+
+.green__block-1 {
+    width: 390px;
+    height: 198px;
+    background: #8AD191;
+    margin-right: 15px;
+}
+
+.green__block-1::before {
+    display: flex;
+    justify-content: center;
+    margin: 68px;
+    font-size: 53px;
+    color: #fff;
+    text-align: center;
+    counter-increment: list;
+    content: counter(list);
+}
+
+.green__block-2 {
+    width: 590px;
+    height: 198px;
+    background: #8AD191;
+    margin-right: 15px;
+}
+
+.green__block-2::before {
+    display: flex;
+    justify-content: center;
+    margin: 68px;
+    font-size: 53px;
+    color: #fff;
+    counter-increment: list;
+    counter-reset: list 1;
+    content: counter(list);
+}
+
+.green__block-3 {
+    width: 160px;
+    height: 198px;
+    background: #8AD191;
+}
+
+.green__block-3::before {
+    display: flex;
+    justify-content: center;
+    margin: 68px;
+    font-size: 53px;
+    color: #fff;
+    counter-increment: list;
+    counter-reset: list 2;
+    content: counter(list);
+}
+
+.main-green2__container {
+    display: flex;
+}
+
+.green__block-4 {
+    width: 995px;
+    height: 198px;
+    background: #8AD191;
+    margin-right: 15px;
+}
+
+.green__block-4::before {
+    display: flex;
+    justify-content: center;
+    margin: 68px;
+    font-size: 53px;
+    color: #fff;
+    counter-increment: list;
+    counter-reset: list 3;
+    content: counter(list);
+}
+
+.green__block-5 {
+    width: 160px;
+    height: 198px;
+    background: #8AD191;
+}
+
+.green__block-5::before {
+    display: flex;
+    justify-content: center;
+    margin: 68px;
+    font-size: 53px;
+    color: #fff;
+    counter-increment: list;
+    counter-reset: list 4;
+    content: counter(list);
+
+}
+
+/* ................aquamarine............ */
+.main-aquamarine__container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.aquamarine__block {
+    width: 255px;
+    height: 199px;
+    background: #0D89B0;
+}
+
+.aquamarine__block:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ..........popup................. */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #FFF;
+    max-width: 1200px;
+    padding: 100px;
+    position: relative;
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    color: #FFF;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+}
+
+.popup__title {
+    font-size: 53px;
+}
